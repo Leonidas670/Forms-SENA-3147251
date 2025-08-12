@@ -37,6 +37,24 @@ label {
   font-weight: 600;
   color: #555;
   font-size: 0.95rem;
+  display: flex; 
+  align-items: center;
+}
+
+input{
+    margin-right: 6px;
+}
+
+.options {
+display: block; 
+margin-bottom: 6px;
+}
+
+.options-group {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 6px;
 }
 
 input,
