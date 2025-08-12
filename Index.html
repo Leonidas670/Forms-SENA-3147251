@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀FORMULARIO SENA V1</h1>
+        <P>GRACIAS POR DEJAR SUS DATOS</P>
+
+
+        <!-- formulario -->
+        <form id="formularioAvanzado" novalidate>
+            <!-- Nombre con validación en tiempo real -->
+            <div class="form-group">
+                <label for="nombre">Name</label>
+                <input 
+                type="text"
+                 name="nombres" 
+                 id="nombres" 
+                 required 
+                 autofocus 
+                 placeholder="Place enter your name"
+                pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü ]{3,20}" />
+            </div>
+            
+             <!-- Email con validacion personalizada-->
+            <div class="form-group">
+                <label for="correo">Email</label>
+                <input
+                type="email"
+                id="correo"
+                name="correo"
+                required
+                placeholder="Plase enter your email"
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{5,50}$"
+                 />
+            </div>
+
+            <!-- Edad con validacion-->
+            <div class="form-group">
+                <label for="edad">Age</label>
+                <input 
+                type="number" 
+                name="edad" 
+                id="edad" 
+                required 
+                placeholder="Plase enter your age"
+            />
+            </div>
+
+            <!-- Seleccionar una opcion-->
+            <div class="form-group">
+                <label for="seleccionar">Choose an option</label>
+                <select name="seleccionar" id="seleccionar"> 
+                    <option value="" disabled selected>-- Select One otion</option>
+                    <option value="opcion1">Option 1</option>
+                    <option value="opcion2">Option 2</option>
+                    <option value="opcion3">Option 3</option>
+                </select>
+            </div>
+
+            <!-- Plan -->
+            <div class="form-group">
+                <label for="planear" style="display: block; margin-bottom: 6px;">Do you plan to buy a new car in the nex 5 years? *</label>
+                <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="radio" 
+                name="planear" 
+                id="yes" 
+                value="yes"
+                required
+                style="margin-right: 6px;"/>
+                Yes
+                </label>
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="radio" 
+                name="planear" 
+                id="no" 
+                value="no"
+                style="margin-right: 6px;"/>
+                No
+                </label>
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="radio" 
+                name="planear" 
+                id="maybe" 
+                value="maybe"
+                style="margin-right: 6px;"/>
+                Maybe
+                </label>
+                </div>
+            </div>
+
+            <!-- Carro favorito -->
+            <div class="form-group">
+                <label for="seleccionar">What is your favorite car brand</label>
+                <select name="seleccionar" id="seleccionar"> 
+                    <option value="" disabled selected>-- Select One otion</option>
+                    <option value="opcion1">Option 1</option>
+                    <option value="opcion2">Option 2</option>
+                    <option value="opcion3">Option 3</option>
+                </select>
+            </div>
+
+            <!-- Favorito -->
+            <div class="form-group">
+                <label for="favorito" style="display: block; margin-bottom: 6px;">What type of means of transportation do you own?</label>
+                <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px;">
+                <label style="display: flex; align-items: center;">
+                <input
+                type="checkbox" 
+                name="favorito" 
+                id="car" 
+                value="car"
+                required
+                style="margin-right: 6px;"/>
+                Car
+                </label>
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="checkbox" 
+                name="favorito" 
+                id="Boat" 
+                value="Boat"
+                style="margin-right: 6px;"/>
+                Boat 
+                </label>
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="checkbox" 
+                name="favorito" 
+                id="bicycle" 
+                value="bicycle"
+                style="margin-right: 6px;"/>
+                Bicycle
+                </label>
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="checkbox" 
+                name="favorito" 
+                id="motorcycle" 
+                value="motorcycle"
+                style="margin-right: 6px;"/>
+                Motorcycle
+                </label>
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="checkbox" 
+                name="favorito" 
+                id="plane" 
+                value="plane"
+                style="margin-right: 6px;"/>
+                Plane
+                </label>
+                <label style="display: flex; align-items: center;">
+                <input 
+                type="checkbox" 
+                name="favorito" 
+                id="Bake" 
+                value="Bake"
+                style="margin-right: 6px;"/>
+                Bake
+                </label>
+                </div>
+            </div>
+
+             <!-- Comentarios con contador -->
+        <div class="form-group">
+          <label for="comentarios">Comentarios</label>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            maxlength="500"
+            placeholder="Plase enter your comments"
+          ></textarea>
+
+            <button 
+            type="submit" 
+            id="btnEnviar">
+                📩Enviar Formulario
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
